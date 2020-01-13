@@ -1,0 +1,212 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   * {
+    box-sizing: border-box;
+  }
+
+  img {max-width: 100%;height: auto;display: block;}
+  p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 40px 0 30px;
+  }
+  .section-div {
+    position: relative;
+    padding: 20px 0 40px;
+  }
+  .social {
+      background: #000;
+  }
+  .social h2 {color: #fff;}
+  .timeline {
+    width: 100%;
+    position: relative;
+  }
+  .timeline-nav__item {
+    width: auto;
+    text-align: center;
+    background: transparent;
+    color: #000;
+    margin: 15px 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+  }
+  .timeline-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: 
+    #afc9f6;
+    transition: .2s;
+}
+.timeline-nav__item:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    border: 1px solid;
+    z-index: -1;
+}
+  .timeline-nav__item.slick-current {
+    color: #ff9900;
+    opacity: 1;
+  }
+  .timeline-nav__item.slick-current::before {
+    background-color: #ff9900;
+  }
+  .timeline-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  .timeline-slide {
+    position: relative;
+    background-repeat: no-repeat;
+    outline: none;
+    background-size: auto 400px, cover;
+    background-position: top;
+    margin: 0 24px;
+    width: 80%;
+    z-index: 1;
+    padding: 0 10px 60px;
+  }
+  .timeline-slide .row {
+      display: flex;
+  }
+  .timeline-slide__content {
+    justify-content: center;
+    align-self: center;
+    z-index: 5;
+    background: #ffffff;
+    padding: 0 15px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  @media (max-width: 500px) {
+    .timeline-slide__content {
+      width: 100%;
+    }
+  }
+  .timeline-year {
+    z-index: 5;
+    font-size: 35px;
+    color: #ffffff;
+    background: #ff9900;
+    padding: 15px 26px;
+    transition: opacity 1.2s;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+  }
+  .timeline-title {
+    color: #ff9900;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+    position: relative;
+  }
+  .timeline-title:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    border: 1px solid #000;
+    bottom: -5px;
+    left: 0;
+  }
+  .timeline-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666666;
+  }
+  .timeline .slick-current:after {
+    background-color: rgba(0, 52, 113, 0);
+  }
+  .timeline .slick-current .timeline-year {
+    opacity: 1;
+  }
+  .timeline .slick-current .timeline-slide__content {
+    opacity: 1;
+  }
+  .slick-arrow {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: #ccc;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+  }
+  .slick-next {
+    right: 0;
+  }
+ 
+  .slick-center .slick-active,
+  .timeline-slide .sl {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+  }
+  
+  #line1 {
+    position: absolute;
+    left: -7px;
+    margin: 0 auto;
+    border: 1px solid;
+    bottom: -40px;
+    width: 1px;
+    height: 30px;
+    right: 0;
+  }
+  #line2 {
+    position: absolute;
+    width: 41%;
+    border: 1px solid;
+    bottom: -40px;
+    left: 55px;
+  }
+  #line3 {
+    position: absolute;
+    height: 30px;
+    border: 1px solid;
+    bottom: -70px;
+    left: 55px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
